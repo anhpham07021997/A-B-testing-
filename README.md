@@ -18,20 +18,27 @@ The project is to understand A/B test run by an e-commerce website. My goal is t
 we can confirm 
 
 ##### Part II
-H0: Pnew-Pold <=0
-H1: Pnew-Pold > 0
 
-Pvalue= 0.905173705140591
-**=> reject the null hypothesis , new page is not better than old page**
+- H0: Pnew-Pold <=0
+
+- H1: Pnew-Pold > 0
+
+- Pvalue= 0.905173705140591
+
+**reject the null hypothesis , new page is not better than old page**
 
 ##### Part III : 
+
 - log=sm.Logit(df["converted"],df[["intercept","ab_page"]])
-=> p value of treatment and control group is 0.190
+
+-  p value of treatment and control group is 0.190
 
 - so we have to has other variables by adding new table csv "countries.csv"
-log=sm.Logit(df4["converted"],df4[["intercept","ab_page","US","CA"]])
-**=>All p_value is bigger that 0.05 => country has no significant impact on the conversion of people**
+
+- log=sm.Logit(df4["converted"],df4[["intercept","ab_page","US","CA"]])
+
+**All p_value is bigger that 0.05 => country has no significant impact on the conversion of people**
 
 
-###  csv files
+### Files
 - ab_data.csv, countries.csv 
