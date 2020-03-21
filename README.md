@@ -18,8 +18,9 @@ The project is to understand A/B test run by an e-commerce website. My goal is t
 we can confirm 
 
 ##### Part II
-$$H_0: P_{new}-P_{old} <=0$$
-$$H_1: P_{new}-P_{old} > 0$$
+H0: Pnew-Pold <=0
+H1: Pnew-Pold > 0
+
 Pvalue= 0.905173705140591
 **=> reject the null hypothesis , new page is not better than old page**
 
